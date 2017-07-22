@@ -1,9 +1,47 @@
-import React, {Component} from 'react'
+import { Component } from "react";
 
-export default class extends Component {
+export default class Inactivity extends Component {
+  static defaultProps = {
+    render: () => null,
+    onChange: () => {},
+    timeout: 10000,
+    events: ["mousemove", "mousedown", "keydown", "touchstart", "scroll"]
+  };
+
+  state = {
+    inactive: true
+  };
+
+  timeout = null;
+
+  componentDidMount() {
+    this.props.events.forEach(event => {
+      window.addEventListener(event, this.handleEvent);
+    });
+  }
+
+  componentWillUnmount() {
+    this.props.events.forEach(event => {
+      window.removeEventListener(event, this.handleEvent);
+    });
+  }
+
+  handleChange(inactive) {
+    this.props.onChange({ inactive });
+    this.setState({ inactive });
+  }
+
+  handleEvent = () => {
+    if (this.state.inactive) {
+      this.handleChange(false);
+    }
+    clearTimeout(this.timeout);
+    this.timeout = setTimeout(() => {
+      this.handleChange(true);
+    }, this.props.timeout);
+  };
+
   render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
+    return this.props.render(this.state);
   }
 }
