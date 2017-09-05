@@ -1,19 +1,15 @@
 {
   "name": "react-idle",
   "version": "1.0.0",
-  "description": "idle React component",
+  "description": "Notifies your app when the user is idle.",
   "main": "lib/index.js",
   "module": "es/index.js",
-  "files": [
-    "css",
-    "es",
-    "lib",
-    "umd"
-  ],
+  "files": ["css", "es", "lib", "umd"],
   "scripts": {
     "build": "nwb build-react-component",
     "clean": "nwb clean-module && nwb clean-demo",
-    "start": "watch -p '{src/**/*.js,README.md,templates/*.html}' -c 'echo \"$(cat templates/header.html) $(render-markdown-js README.md) $(cat templates/footer.html)\" > index.html'",
+    "start":
+      "watch -p '{src/**/*.js,README.md,templates/*.html}' -c 'echo \"$(cat templates/header.html) $(render-markdown-js README.md) $(cat templates/footer.html)\" > index.html'",
     "test": "nwb test-react",
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
@@ -29,11 +25,8 @@
     "render-markdown-js": "^1.2.1",
     "watch-cli": "^0.2.2"
   },
-  "author": "",
-  "homepage": "",
+  "author": "Ryan Florence",
   "license": "MIT",
-  "repository": "",
-  "keywords": [
-    "react-component"
-  ]
+  "repository": "https://github.com/reacttraining/react-idle",
+  "keywords": ["react-component"]
 }
