@@ -8,18 +8,10 @@
 
 ## Demo Development Server
 
-- `npm start` will run a development server with the component's demo app at [http://localhost:3000](http://localhost:3000) with hot module reloading.
-
-## Running Tests
-
-- `npm test` will run the tests once.
-
-- `npm run test:coverage` will run the tests and produce a coverage report in `coverage/`.
-
-- `npm run test:watch` will run the tests on every change.
+- `npm start` will watch files and compile the documentation, you'll need to start a static file server at the root of the repository to serve it.
 
 ## Building
 
-- `npm run build` will build the component for publishing to npm and also bundle the demo app.
+- `npm run build` will build the component for publishing to npm.
 
 - `npm run clean` will delete built resources.
