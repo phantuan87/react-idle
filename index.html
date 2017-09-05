@@ -20,9 +20,12 @@
       color: hsl(0, 0%, 90%);
       background: hsl(0, 0%, 10%);
       padding: 10px;
-      border-top-right-radius: 6px;
-      border-top-left-radius: 6px;
+      border-radius: 6px;
       margin-bottom: 0;
+    }
+    pre.render-js-code {
+      border-bottom-right-radius: 0px;
+      border-bottom-left-radius: 0px;
     }
     .render-js {
       background: white;
@@ -149,7 +152,7 @@ yarn add react-idle
 <pre><code class="language-js"><span class="token keyword">const</span> Idle <span class="token operator">=</span> ReactIdle<span class="token punctuation">.</span><span class="token keyword">default</span>
 </code></pre>
 <h2 id="how"><a class="header-anchor" href="#how" aria-hidden="true">#</a> How?</h2>
-<pre><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
+<pre class="render-js-code"><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
 <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token keyword">default</span><span class="token punctuation">:</span> Idle <span class="token punctuation">}</span> <span class="token operator">=</span> ReactIdle
 
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">(</span>
@@ -166,9 +169,9 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
   <span class="token punctuation">/></span></span>
 <span class="token punctuation">)</span><span class="token punctuation">,</span> DOM_NODE<span class="token punctuation">)</span>
 </code></pre>
-<div id="render-ot7nuh0nasg" class="render-js"></div>
+<div id="render-qccfpd9gcog" class="render-js"></div>
 <script type="text/babel">
-(function() { var DOM_NODE = document.getElementById("render-ot7nuh0nasg");
+(function() { var DOM_NODE = document.getElementById("render-qccfpd9gcog");
 // import { Idle } from 'react-idle'
 const { default: Idle } = ReactIdle
 
@@ -191,7 +194,7 @@ ReactDOM.render((
 <h2 id="props"><a class="header-anchor" href="#props" aria-hidden="true">#</a> Props</h2>
 <h3 id="render"><a class="header-anchor" href="#render" aria-hidden="true">#</a> <code>render</code></h3>
 <p>Whatever you'd like to render in response to changes in user activity.</p>
-<pre><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
+<pre class="render-js-code"><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
 <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token keyword">default</span><span class="token punctuation">:</span> Idle <span class="token punctuation">}</span> <span class="token operator">=</span> ReactIdle
 
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">(</span>
@@ -205,9 +208,9 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
   <span class="token punctuation">}</span></span><span class="token punctuation">/></span></span>
 <span class="token punctuation">)</span><span class="token punctuation">,</span> DOM_NODE<span class="token punctuation">)</span>
 </code></pre>
-<div id="render-g5fqic4ftro" class="render-js"></div>
+<div id="render-iqcnpp43nag" class="render-js"></div>
 <script type="text/babel">
-(function() { var DOM_NODE = document.getElementById("render-g5fqic4ftro");
+(function() { var DOM_NODE = document.getElementById("render-iqcnpp43nag");
 // import { Idle } from 'react-idle'
 const { default: Idle } = ReactIdle
 
@@ -226,7 +229,7 @@ ReactDOM.render((
 
 <h3 id="timeout"><a class="header-anchor" href="#timeout" aria-hidden="true">#</a> <code>timeout</code></h3>
 <p>How long before notifying that the user is inactive in milliseconds.</p>
-<pre><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
+<pre class="render-js-code"><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
 <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token keyword">default</span><span class="token punctuation">:</span> Idle <span class="token punctuation">}</span> <span class="token operator">=</span> ReactIdle
 
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">(</span>
@@ -243,9 +246,9 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
   <span class="token punctuation">/></span></span>
 <span class="token punctuation">)</span><span class="token punctuation">,</span> DOM_NODE<span class="token punctuation">)</span>
 </code></pre>
-<div id="render-vke5eun1hg8" class="render-js"></div>
+<div id="render-m1ld3l95qvg" class="render-js"></div>
 <script type="text/babel">
-(function() { var DOM_NODE = document.getElementById("render-vke5eun1hg8");
+(function() { var DOM_NODE = document.getElementById("render-m1ld3l95qvg");
 // import { Idle } from 'react-idle'
 const { default: Idle } = ReactIdle
 
@@ -267,7 +270,7 @@ ReactDOM.render((
 
 <h3 id="onchange"><a class="header-anchor" href="#onchange" aria-hidden="true">#</a> <code>onChange</code></h3>
 <p>Called whenever the user's activity state changes, a great time to change the owner component's state, or to kick off some imperative work like pre-fetching code-split bundles or images.</p>
-<pre><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
+<pre class="render-js-code"><code class="jsx"><span class="token comment" spellcheck="true">// import { Idle } from 'react-idle'</span>
 <span class="token keyword">const</span> <span class="token punctuation">{</span> <span class="token keyword">default</span><span class="token punctuation">:</span> Idle <span class="token punctuation">}</span> <span class="token operator">=</span> ReactIdle
 
 <span class="token keyword">class</span> <span class="token class-name">App</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
@@ -308,9 +311,9 @@ ReactDOM.render((
 
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>App</span><span class="token punctuation">/></span></span><span class="token punctuation">,</span> DOM_NODE<span class="token punctuation">)</span>
 </code></pre>
-<div id="render-0r92m1629ug" class="render-js"></div>
+<div id="render-5dne8bdv3lo" class="render-js"></div>
 <script type="text/babel">
-(function() { var DOM_NODE = document.getElementById("render-0r92m1629ug");
+(function() { var DOM_NODE = document.getElementById("render-5dne8bdv3lo");
 // import { Idle } from 'react-idle'
 const { default: Idle } = ReactIdle
 
